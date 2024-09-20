@@ -1,0 +1,35 @@
+Hello Everyone!
+
+I was working with Python IDLE v 3.12 recently and I came across a situation where I couldn't access Matplotlib. Now, if you're not familiar with Matplotlib, it is something that is used in Python IDLE.
+It's primary use is to create things such as a bar chart, pie chart, etc. It is supposed to be included with Python v 3.12, however, on my Windows 11 Home host device it was not included.
+
+I looked around online and I was trying to find the proper commands to use in Command Prompt (CMD). Only, the suggested "pip" commands I was finding online were not working for me. 
+
+If you need to download Matplotlib to your Python IDLE program on your Windows machine, here are some very simple instructions. Please see below.
+
+First go to your Windows search bar and type either CMD or Command Prompt. Once you see the program pop up in the results, right click the program and run as an administrator.
+Once the CMD terminal opens use the following commands:
+
+Type:
+python --version
+(wait for output)
+
+The output from this command should provide you with the current version of Python that you have on your computer which should be v 3.12.2 or higher.
+
+Now that you have the output, type:
+
+py -m pip --version
+(wait for output)
+
+Now type:
+
+python.exe -m pip install --upgrade pip
+(Wait for the installation to complete)
+
+And finally, finish with:
+ 
+py -m pip install matplotlib
+(wait for output)
+
+You should now successfully be able to call upon Matplotlib for charts on your Windows 11 Home PC with your Python source code. Thank you for reading this and I hope it has helped you!
+
